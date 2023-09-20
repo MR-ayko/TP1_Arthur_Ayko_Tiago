@@ -19,6 +19,6 @@ void AdicionarNoTopo(ListaCartas *listaCartas);
 void RetirarDoTopo(ListaCartas *listaCartas);
 void TransferirCartas(ListaCartas *listaCartas);
 void Embaralhar(ListaCartas *listaCartas);
-void Exibir(ListaCartas *listaCartas);
+void Mostrar(ListaCartas *listaCartas);
 
 #endif //TP1_LISTADECARTAS_H

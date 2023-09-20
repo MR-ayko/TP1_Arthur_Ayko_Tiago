@@ -5,15 +5,16 @@ typedef struct {
     int valor;
     char naipe;
     int posicao;
+    char cor;
 }Carta;
 
 void CriaCarta(Carta *carta, int valor, char naipe, int posicao);
-void RetornaNipe(Carta *carta);
-void RetornaValor(Carta *carta);
-void RetornaPosicao(Carta *carta);
+char RetornaNaipe(Carta *carta);
+int RetornaValor(Carta *carta);
+int RetornaPosicao(Carta *carta);
 void AlteraPosicao(Carta *carta);
-void SequenciaMesmoNaipe(Carta *carta1,Carta *carta2);
-void SequenciaAlternada(Carta *carta1,Carta *carta2);
+int SequenciaMesmoNaipe(Carta *carta1,Carta *carta2);
+int SequenciaAlternada(Carta *carta1,Carta *carta2);
 void Exibir(Carta *carta);
 
 #endif //TP1_CARTA_H
